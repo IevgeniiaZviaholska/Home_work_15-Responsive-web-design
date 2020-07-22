@@ -76,78 +76,76 @@
     <section class="section section_products">
       <div class="container">
         <div class="layout layout_products">
-          <div class="backgraund-filter">
-            <div class="layout_item">
-              <div class="filter">
-                <form action="#" class="filter__form" method="GET">
-                  <div class="filter__item">
-                    <div class="close"></div>
-                    <span class="filter__label">Цена за сутки, ₽</span>
-                    <div class="filter__control">
-                      <div class="price">
-                        <input class="price__from" type="text" placeholder="от 100" />
-                        <input class="price__to" type="text" placeholder="до 600" />
-                      </div>
+          <div class="layout_item">
+            <div class="filter">
+              <form action="#" class="filter__form" method="GET">
+                <div class="filter__item">
+                  <div class="close"></div>
+                  <span class="filter__label">Цена за сутки, ₽</span>
+                  <div class="filter__control">
+                    <div class="price">
+                      <input class="price__from" type="text" placeholder="от 100" />
+                      <input class="price__to" type="text" placeholder="до 600" />
                     </div>
                   </div>
-                  <div class="filter__item">
-                    <span class="filter__label">Площадь</span>
-                    <p class="filter__control">
-                      <label><input class="checkbox" type="checkbox" />0,63
-                        м2</label>
-                    </p>
-                    <p class="filter__control">
-                      <label><input class="checkbox" type="checkbox" />0,90
-                        м2</label>
-                    </p>
-                    <p class="filter__control">
-                      <label><input class="checkbox" type="checkbox" />1,13
-                        м2</label>
-                    </p>
-                    <p class="filter__control">
-                      <label><input class="checkbox" type="checkbox" />1,56
-                        м2</label>
-                    </p>
-                    <p class="filter__control">
-                      <label><input class="checkbox" type="checkbox" />2,56
-                        м2</label>
-                    </p>
-                    <p class="filter__control">
-                      <label><input class="checkbox" type="checkbox" />2,88
-                        м2</label>
-                    </p>
-                  </div>
+                </div>
+                <div class="filter__item">
+                  <span class="filter__label">Площадь</span>
+                  <p class="filter__control">
+                    <label><input class="checkbox" type="checkbox" />0,63
+                      м2</label>
+                  </p>
+                  <p class="filter__control">
+                    <label><input class="checkbox" type="checkbox" />0,90
+                      м2</label>
+                  </p>
+                  <p class="filter__control">
+                    <label><input class="checkbox" type="checkbox" />1,13
+                      м2</label>
+                  </p>
+                  <p class="filter__control">
+                    <label><input class="checkbox" type="checkbox" />1,56
+                      м2</label>
+                  </p>
+                  <p class="filter__control">
+                    <label><input class="checkbox" type="checkbox" />2,56
+                      м2</label>
+                  </p>
+                  <p class="filter__control">
+                    <label><input class="checkbox" type="checkbox" />2,88
+                      м2</label>
+                  </p>
+                </div>
 
-                  <div class="filter__item">
-                    <span class="filter__label">Оснащение номера</span>
-                    <p class="filter__control">
-                      <label><input class="checkbox" type="checkbox" />Пустой
-                        номер</label>
-                    </p>
-                    <p class="filter__control">
-                      <label><input class="checkbox" type="checkbox" />Лежак</label>
-                    </p>
-                    <p class="filter__control">
-                      <label><input class="checkbox" type="checkbox" />Когтеточка</label>
-                    </p>
-                    <p class="filter__control">
-                      <label><input class="checkbox" type="checkbox" />Игровой-комплекс</label>
-                    </p>
-                    <p class="filter__control">
-                      <label><input class="checkbox" type="checkbox" />Домик</label>
-                    </p>
-                  </div>
+                <div class="filter__item">
+                  <span class="filter__label">Оснащение номера</span>
+                  <p class="filter__control">
+                    <label><input class="checkbox" type="checkbox" />Пустой
+                      номер</label>
+                  </p>
+                  <p class="filter__control">
+                    <label><input class="checkbox" type="checkbox" />Лежак</label>
+                  </p>
+                  <p class="filter__control">
+                    <label><input class="checkbox" type="checkbox" />Когтеточка</label>
+                  </p>
+                  <p class="filter__control">
+                    <label><input class="checkbox" type="checkbox" />Игровой-комплекс</label>
+                  </p>
+                  <p class="filter__control">
+                    <label><input class="checkbox" type="checkbox" />Домик</label>
+                  </p>
+                </div>
 
-                  <div class="filter__actions">
-                    <button class="button button_secondary" type="submit">
-                      Применить
-                    </button>
-                    <button class="button button_tertiary" type="reset">
-                      Сбросить фильтр
-                    </button>
-                  </div>
-                </form>
-              </div>
+                <div class="filter__actions">
+                  <button class="button button_secondary" type="submit">
+                    Применить
+                  </button>
+                  <button class="button button_tertiary" type="reset">
+                    Сбросить фильтр
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
           <div class="layout_item">
@@ -513,14 +511,14 @@
       .addEventListener("click", function () {
         document.querySelector('.layout_products > :nth-child(1)').classList.add("is-open");
         document.querySelector('.close').classList.add("is-open");
-        document.querySelector('backgraund-filter').classList.add("is-open");
+
       });
     document
       .querySelector(".close")
       .addEventListener("click", function () {
         document.querySelector(".layout_products > :nth-child(1)").classList.remove("is-open");
         document.querySelector('.close').classList.remove("is-open");
-        document.querySelector('.backgraund-filter').classList.remove("is-open");
+
       });
   </script>
 
